@@ -13,7 +13,9 @@ keywords: [ "Hugo" ]
 我是内容
 
 ```java
-我是代码
+public static void main(String[] agrs){
+  
+}
 ```
 
 
