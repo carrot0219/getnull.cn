@@ -1,6 +1,6 @@
 baseURL: https://getnull.cn
 # baseURL: https://www.sulvblog.cn  # 绑定的域名
-languageCode: zh-cn # en-us
+languageCode: zh # en-us
 title: Seven'blog
 theme: PaperMod # 主题名字，和themes文件夹下的一致
 
@@ -17,7 +17,7 @@ buildExpired: false
 #googleAnalytics: UA-123-45 # 谷歌统计
 # Copyright: Sulv
 
-paginate: 15    # 每页显示的文章数
+paginate: 8    # 每页显示的文章数
 
 minify:
     disableXML: true
@@ -27,12 +27,12 @@ permalinks: #浏览器链接显示方式
   post: "/:title/"
   # post: "/:year/:month/:day/:title/"
 
-defaultContentLanguage: en # 最顶部首先展示的语言页面
+defaultContentLanguage: zh # 最顶部首先展示的语言页面
 defaultContentLanguageInSubdir: true
 
 languages:
-    en:
-      languageName: "English"
+    zh:
+      languageName: "Chinese"
       # contentDir: content/english
       weight: 1
       profileMode:
@@ -58,17 +58,21 @@ languages:
             name: 首页
             url: /
             weight: 1
+          - identifier: search
+            name: 搜索
+            url: search
+            weight: 2
           - identifier: tags
             name: 标签
-            url: /tags/
+            url: tags
             weight: 3
           - identifier: archives
             name: 时间线
-            url: /archives/
+            url: archives/
             weight: 4
           - identifier: about
             name: 关于我
-            url: /about/
+            url: about
             weight: 5
 
 outputs:
@@ -80,7 +84,7 @@ outputs:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     # description: "这是一个纯粹的博客......"
-    author: Sulv
+    author: Seven
     # author: ["Me", "You"] # multiple authors
     defaultTheme: auto  # defaultTheme: light or  dark 
     disableThemeToggle: false
@@ -90,7 +94,7 @@ params:
     # disableSpecialistPost: true
     displayFullLangName: true
     ShowPostNavLinks: true
-    ShowBreadCrumbs: false
+    ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     hideFooter: false # 隐藏页脚
     ShowWordCounts: true
@@ -98,8 +102,8 @@ params:
 
     ShowLastMod: false #显示文章更新时间
 
-    ShowToc: false # 显示目录
-    TocOpen: false # 自动展开目录
+    ShowToc: true # 显示目录
+    TocOpen: true # 自动展开目录
 
     comments: true
     
