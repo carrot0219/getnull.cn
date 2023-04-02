@@ -1,4 +1,4 @@
-baseURL: "https://examplesite.com/"
+baseURL: "https://getnull.cn/"
 title: Seven'blog
 paginate: 10
 theme: PaperMod
@@ -36,7 +36,7 @@ minify:
   minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: development # to enable google analytics, opengraph, twitter-cards and schema.
   title: ExampleSite
   # 描述
   description: "ExampleSite description"
